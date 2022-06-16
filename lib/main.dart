@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:layout/Controller/controller.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+
 // ignore: unused_import
 // import 'package:layout/generated/assets.asset.dart';
 
@@ -286,12 +286,3 @@ Row(
   
 }
 
-void showToast()=> Fluttertoast.showToast(
-  msg: "Incraemenet",
-  fontSize: 50,
-    textColor: Colors.black,
-     backgroundColor: Colors.red,  
-    
-     
-  
-  ) ;
