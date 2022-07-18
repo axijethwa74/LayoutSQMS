@@ -20,14 +20,16 @@ class _ButtonsState extends State<Buttons> {
         Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                Text(
-                  "Defected Pieces :",
-                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                Center(
+                  child: Text(
+                    "Defected Pieces :",
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
                 ),
               ],
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

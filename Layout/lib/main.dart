@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:layout/Widgets/LightWidget.dart';
 import 'package:layout/Widgets/buttons.dart';
 import 'package:layout/Widgets/CardWidgets.dart';
 import 'package:layout/Widgets/widgets.dart';
@@ -36,19 +37,24 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+             mainAxisAlignment: MainAxisAlignment.center,
               children:  const [
-                Widgets(),
+
+                Cardswidgets(),
                 SizedBox(
-                  height: 120,
-                ),
+                  height: 20,),
+                Widgets(),
+
+                SizedBox(height: 80,),
           
                 Buttons(),
 
                 SizedBox(
-                  height: 150,),
+                  height: 30,),
 
-                 CardsWidgets(),
+                  Lightwidgets(),
+
+               
                 
                 
               ],
