@@ -156,6 +156,8 @@ const SizedBox(height: 30,),
      Row(
 
 
+
+
       mainAxisAlignment: MainAxisAlignment.center,
       children: [ 
          Container(
@@ -192,10 +194,27 @@ const SizedBox(height: 30,),
                      ),
                      const Text("N/A", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                      ],
+
+                  
                 
     ),
-
+    const SizedBox(height: 30,),
+    Container(
+      width: 100,
+      height: 45,
+      child: ElevatedButton(
+      style: ElevatedButton.styleFrom(
+        textStyle: const TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w600,   
+        ),
+      ),
+      onPressed: (){},
+       child: const Text("Submit"),
+      ),
+    ),
       ],
+     
     );
   }
 
