@@ -39,7 +39,8 @@ class _MyAppState extends State<MyApp> {
             child: Column(
              mainAxisAlignment: MainAxisAlignment.center,
               children:  const [
-
+                SizedBox(
+                  height: 20,),
                 Cardswidgets(),
                 SizedBox(
                   height: 20,),

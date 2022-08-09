@@ -8,7 +8,10 @@ class Widgets extends StatefulWidget {
 
 class _WidgetsState extends State<Widgets> {
 
-   int groupValue=0;
+   int groupValue1=0;
+   int groupValue2=0;
+   int groupValue3=0;
+   int groupValue4=0;
    
   @override
   Widget build(BuildContext context) {
@@ -23,8 +26,9 @@ class _WidgetsState extends State<Widgets> {
         height: 50,
         width: 120,
        color: const Color.fromARGB(255, 2, 27, 48),
+        child: ElevatedButton(onPressed: (){}, 
         // ignore: sort_child_properties_last
-        child: ElevatedButton(onPressed: (){}, child: const Text("MACHINE C ALIBRATION",style :TextStyle(fontSize: 15),),
+        child: const Text("MACHINE C ALIBRATION",style :TextStyle(fontSize: 15),),
          style: ElevatedButton.styleFrom(
            primary: const Color.fromARGB(255, 8, 4, 59)
          ),
@@ -34,22 +38,22 @@ class _WidgetsState extends State<Widgets> {
          const SizedBox(width: 5,),
      Radio(
                       value: 0, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue1,
+                     onChanged: handleRadio1
                      ),
                      const Text("Ok", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                      const SizedBox(width: 5,),
                       Radio(
                       value: 1, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue1,
+                     onChanged: handleRadio1
                      ),
                      const Text("NOT Ok", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
  const SizedBox(width: 5,),
                      Radio(
                       value: 2, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue1,
+                     onChanged: handleRadio1
                      ),
                      const Text("N/A", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                 
@@ -78,22 +82,22 @@ Row(
          const SizedBox(width: 5,),
      Radio(
                       value: 3, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue2,
+                     onChanged: handleRadio2
                      ),
                      const Text("Ok", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                      const SizedBox(width: 5,),
                       Radio(
                       value: 4, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue2,
+                     onChanged: handleRadio2
                      ),
                      const Text("NOT Ok", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
  const SizedBox(width: 5,),
                      Radio(
                       value: 5, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue2,
+                     onChanged: handleRadio2
                      ),
                      const Text("N/A", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                      ],
@@ -123,22 +127,22 @@ const SizedBox(height: 30,),
          const SizedBox(width: 5,),
      Radio(
                       value: 6, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue3,
+                     onChanged: handleRadio3
                      ),
                      const Text("Ok", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                      const SizedBox(width: 5,),
                       Radio(
                       value: 7, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue3,
+                     onChanged: handleRadio3
                      ),
                      const Text("NOT Ok", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
  const SizedBox(width: 5,),
                      Radio(
                       value: 8, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue3,
+                     onChanged: handleRadio3
                      ),
                      const Text("N/A", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                      ],
@@ -169,22 +173,22 @@ const SizedBox(height: 30,),
          const SizedBox(width: 5,),
      Radio(
                       value: 9, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue4,
+                     onChanged: handleRadio4
                      ),
                      const Text("Ok", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                      const SizedBox(width: 5,),
                       Radio(
                       value: 10, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue4,
+                     onChanged: handleRadio4
                      ),
                      const Text("NOT Ok", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
  const SizedBox(width: 5,),
                      Radio(
                       value: 11, 
-                    groupValue: groupValue,
-                     onChanged: handleRadio
+                    groupValue: groupValue4,
+                     onChanged: handleRadio4
                      ),
                      const Text("N/A", style: TextStyle(fontSize: 13.0,color: Colors.black,fontWeight: FontWeight.bold),),
                      ],
@@ -197,13 +201,29 @@ const SizedBox(height: 30,),
 
 
   
-  void handleRadio( value) {
+  void handleRadio1( value) {
     setState(() {
-      groupValue = value;
-    });
- 
-
-
-    
+      groupValue1 = value;
+    });   
   }
+
+  void handleRadio2( value) {
+    setState(() {
+      groupValue2 = value;
+    });   
+  }
+
+void handleRadio3( value) {
+    setState(() {
+      groupValue3 = value;
+    });   
+  }
+
+void handleRadio4( value) {
+    setState(() {
+      groupValue4 = value;
+    });   
+  }
+
+
 }
